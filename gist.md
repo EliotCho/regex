@@ -60,6 +60,21 @@ Typical email address such as `example123@email.com`
 
 - `\.` is used to match a literal dot (`.`) instead of its special regex meaning (matching any character).
 
+### Valid Matches:
+1. example123@domain.com
+2. user.name@sub-domain.org
+3. firstname.lastname@company.co
+4. username_123@domain-name.net
+5. user.name@domain.co.uk
+
+### Invalid Matches:
+
+1. plainaddress (Missing @ and domain)
+2. @missingusername.com (Missing username)
+3. username@.com (Domain name starts with a dot)
+4. username@domain..com (Consecutive dots in the domain)
+5. username@domain.c (Top-level domain is only one character long, which is not allowed by this regex)
+
 ## Author
 
 [Eliot's Github](https://github.com/EliotCho)
