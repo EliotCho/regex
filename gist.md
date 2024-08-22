@@ -3,10 +3,13 @@
 Introductory paragraph (replace this with your text)
 
 ## Summary
+
 Regex being used
+
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
+
 Typical email address such as `example123@email.com`
 
 ## Table of Contents
@@ -19,6 +22,8 @@ Typical email address such as `example123@email.com`
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
+- [Valid Matches](#valid-matches)
+- [Invalid Matches](#invalid-matches)
 
 ## Regex Components
 
@@ -35,9 +40,9 @@ Typical email address such as `example123@email.com`
 ### Grouping Constructs
 
 - Parentheses `()` are used to group parts of the pattern. This regex has three groups:
-    1. `([a-z0-9_\.-]+)` matches the username part.
-    2. `([\da-z\.-]+)` matches the domain name.
-    3. `([a-z\.]{2,6})` matches the top-level domain (like `.com` or `.net`).
+  1. `([a-z0-9_\.-]+)` matches the username part.
+  2. `([\da-z\.-]+)` matches the domain name.
+  3. `([a-z\.]{2,6})` matches the top-level domain (like `.com` or `.net`).
 
 ### Bracket Expressions
 
@@ -61,6 +66,7 @@ Typical email address such as `example123@email.com`
 - `\.` is used to match a literal dot (`.`) instead of its special regex meaning (matching any character).
 
 ### Valid Matches:
+
 1. example123@domain.com
 2. user.name@sub-domain.org
 3. firstname.lastname@company.co
